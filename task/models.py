@@ -10,3 +10,8 @@ class Task(models.Model):
     def __str__(self):
         return self.title
 
+class category(models.Model):
+    category = models.ForeignKey(Task, on_delete=models.PROTECT())
+
+
+
